@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="Chart.css">
+  <title>Expenses Chart</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main">
+    <header class="header">
+      <div>
+        <p>My balance</p>
+        <h1 class="balance">$921.48</h1>
+      </div>
+      <img src="images/logo.svg" alt="Logo">
+    </header>
+
+
+    <section class="section">
+      <h1 class="header-money">Spending - Last 7 days</h1>
+
+      <div class="chart-holder">
+        <div class="content-holder">
+          <div class="sum sum1"><p class="sumText"></p></div>
+          <div class="box first"></div>
+          <p class="day">mon</p>
+        </div>
+
+        <div class="content-holder">
+          <div class="sum sum2"><p class="sumText"></p></div>
+          <div class="box second"></div>
+          <p class="day">tue</p>
+        </div>
+
+        <div class="content-holder">
+          <div class="sum sum3"><p class="sumText"></p></div>
+          <div class="box third"></div>
+          <p class="day">wed</p>
+        </div>
+
+        <div class="content-holder">
+          <div class="sum sum4"><p class="sumText"></p></div>
+          <div class="box fourth"></div>
+          <p class="day">thu</p>
+        </div>
+
+        <div class="content-holder">
+          <div class="sum sum5"><p class="sumText"></p></div>
+          <div class="box fifth"></div>
+          <p class="day">fri</p>
+        </div>
+
+        <div class="content-holder">
+          <div class="sum sum6"><p class="sumText"></p></div>
+          <div class="box sixth"></div>
+          <p class="day">sat</p>
+        </div>
+
+        <div class="content-holder">
+          <div class="sum sum7"><p class="sumText"></p></div>
+          <div class="box seventh"></div>
+          <p class="day">sun</p>
+        </div>
+      </div>
+
+      <hr class="hr">
+
+      <div class="total">
+        <div>
+          <p>Total this month</p>
+          <h1 class="this-month">$478.33</h1>
+        </div>
+  
+        <div class="procent-holder">
+          <p class="procent">+2.4%</p>
+          <p class="change">from last month</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="Chart.js"></script>
+  <script src="data.json"></script>
+</body>
+</html>
